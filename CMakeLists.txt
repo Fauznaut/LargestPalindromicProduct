@@ -3,5 +3,5 @@ project(PalindromicProduct)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES main.cpp)
+set(SOURCE_FILES Palindrome.cpp)
 add_executable(PalindromicProduct ${SOURCE_FILES})
