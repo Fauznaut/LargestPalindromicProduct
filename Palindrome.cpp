@@ -23,12 +23,11 @@ bool CheckForPalindrome(int product) {
     int backwardsProductParsedAsStringPosition = productParsedAsString.length() - 1;
     string backwardsProductParsedAsString;
     for (int currentChar = 0; currentChar < productParsedAsString.length(); currentChar++) {
-        backwardsProductParsedAsString += productParsedAsString.at(backwardsProductParsedAsStringPosition);
+        backwardsProductParsedAsString += productParsedAsString.at(
+                (unsigned int) backwardsProductParsedAsStringPosition);
         backwardsProductParsedAsStringPosition--;
     }
-    if (productParsedAsString == backwardsProductParsedAsString)
-        return true;
-    return false;
+    return productParsedAsString == backwardsProductParsedAsString;
 }
 
 int LargestPalindromicProduct(int firstFactorDigits, int secondFactorDigits) {
